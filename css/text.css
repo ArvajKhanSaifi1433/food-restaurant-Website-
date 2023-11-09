@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Spline Sans', sans-serif;
+    color: #777;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-block: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #222;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    transition: all .4s;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #f58d17;
+}
+
+img {
+    width: 100%;
+}
+
+
+.divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: #ffa238;
+}
+
+/* btn */
+
+.btn {
+    border-radius: 0;
+    padding: 14px 38px;
+}
+
+.btn-btrand {
+    background-color: #f58d17;
+    color: white;
+    font-weight: 500;
+    /* border-radius: .5rem; */
+    border-color: #f58d17;
+}
+
+.btn-btrand:hover {
+    border-color: #ca7310;
+    background-color: #ca7310;
+    color: white;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/cover1.jpg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/cover2.jpg);
+}
+
+.bg-cover {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+#heroslider h6::after,
+#heroslider h6::before {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, .6);
+    width: 50px;
+    height: 50px;
+    margin-block: auto;
+}
+
+.intro-tex {
+    text-align: center;
+}
+
+.intro-tex p {
+    max-width: 500px;
+    margin-inline: auto;
+    margin-block: 10px;
+}
+
+#menu .nav-pills .nav-link {
+    background: #fff;
+    margin-inline: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: #f58d17;
+    color: #fff;
+
+}
+
+.menu-item .star,
+.person .stars {
+    color: #f58d17 !important;
+    transition: box-shadow .4s linear;
+}
+
+.ck {
+    color: #f58d17;
+}
+
+.shadow-on-hover {
+    transition: all .3s linear;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .1);
+}
+
+
+#features {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/cover2.jpg);
+}
+
+
+.feature {
+    border: 2px solid #f58d17;
+    transition: all .5s ease-out;
+}
+
+
+.feature .feature-icon {
+    width: 80px;
+    height: 80px;
+    background: #f58d17;
+    font-size: 35px;
+    color: #ffffff;
+    transition: all .5s ease-out;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    border-radius: 2px;
+}
+
+.feature:hover .feature-icon {
+    transform: rotate(360deg);
+    border-radius: 30px;
+}
+
+.team-mamber img {
+    max-width: 140px;
+    box-shadow: -10px -10px 0 #f58d17;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+#reviews {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/cover3.jpg);
+}
+
+.review img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.review .quote-icon {
+    font-size: 80px;
+    color: #f58d17;
+    line-height: 1;
+}
+
+#reviewsSlider .carousel-indicators {
+    margin-bottom: -3rem;
+}
+
+#reservation input.form-control {
+    height: 48px;
+}
+
+#reservation .form-control {
+    border-radius: 0;
+}
+
+#reservation input:focus,
+#reservation textarea:focus {
+    border: 2px solid #ffa238;
+}
+
+.insta-posts {
+    position: relative;
+    overflow: hidden;
+}
+
+.insta-posts:hover .insta-btn {
+    background: rgba(255, 255, 255, 0);
+
+}
+
+.insta-posts .insta-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgb(228, 64, 95);
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.486);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s linear all;
+}
+
+.insta-posts img {
+    transition: .4s linear all;
+}
+
+.insta-posts:hover img {
+    transform: scale(1.1);
+}
+
+.blog-post {
+    overflow: hidden;
+}
+
+.blog-post img {
+    width: 40%;
+    object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-post img {
+        width: 100%;
+    }
+}
+
+.blog-post img {
+    transition: all 0.4s;
+}
+
+.blog-post:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/cover2.jpg);
+    padding-block: 80px 30px;
+
+}
+
+footer img {
+    max-width: 170px;
+}
+
+
+footer .footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.477);
+}
